@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Django ToDo</title>
+</head>
+<body>
+    <h1>ToDo App</h1>
+    <a href="{% url 'index' %}">Home</a> | 
+    <a href="{% url 'add_task' %}">Add Task</a>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
